@@ -11,13 +11,12 @@
 <body>
 
     <script>
-    let rayon = prompt('cest quoi le rayon');
-    let hauteur = prompt('cest quoi la hauteur');
-
-    let resultat =  volumecylindre(rayon, hauteur);
-    if (resultat) alert(resultat);
-    else alert('paie ta tournée');
+    function afficherMichel() {
+        document.getElementById('wrap').innerHTML= '<p>Michel</p>';
+    }
     </script>
+<div id="wrap"></div>
+<h1 onclick="afficherMichel();">Clique moi </h1>
 
 
 </body>
