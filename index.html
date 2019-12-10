@@ -6,17 +6,26 @@
     <script src="asset/js/functions/volumecylincdre.js"></script>
 
 
-
 </head>
 <body>
 
     <script>
-    function afficherMichel() {
-        document.getElementById('wrap').innerHTML= '<p>Michel</p>';
-    }
+
+    let coincoin = new Object();
+    // let coincoin = {};
+
+        coincoin.couleur = 'verte';
+        coincoin.taille = 152;
+        coincoin.clafoutis = 'cerise';
+        coincoin.choucroute = 'biere';
+        coincoin.objet = new Object();
+        coincoin.objet.diametre = 120;
+
+
+        alert(coincoin);
     </script>
-<div id="wrap"></div>
-<h1 onclick="afficherMichel();">Clique moi </h1>
+
+
 
 
 </body>
