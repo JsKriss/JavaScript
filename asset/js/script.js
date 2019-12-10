@@ -12,5 +12,5 @@ for (let i = -1722;i <= 2756;i++){
 
 
 message += '</ul>';
-alert('aye!');
+console.log('aye!');
 document.write(message);
