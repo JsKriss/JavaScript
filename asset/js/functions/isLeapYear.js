@@ -9,5 +9,3 @@ function isLeapYear(year){
     else{
         return false;
     }
-
-}

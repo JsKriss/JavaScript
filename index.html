@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Java Script</title>
-    <script src="asset/js/functions/isLeapYear.js"></script>
+    <script src="asset/js/functions/volumecylincdre.js"></script>
 
 
 
@@ -11,14 +11,12 @@
 <body>
 
     <script>
-        let reponse = prompt('quelle annee?');
+    let rayon = prompt('cest quoi le rayon');
+    let hauteur = prompt('cest quoi la hauteur');
 
-        if (isLeapYear(reponse)){
-            alert('wesh');
-        }
-        else{
-            alert('not wesh');
-        }
+    let resultat =  volumecylindre(rayon, hauteur);
+    if (resultat) alert(resultat);
+    else alert('paie ta tournée');
     </script>
 
 
