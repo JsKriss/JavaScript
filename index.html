@@ -9,23 +9,34 @@
 </head>
 <body>
 
-    <script>
+<script>
 
-    let coincoin = new Object();
-    // let coincoin = {};
-
-        coincoin.couleur = 'verte';
-        coincoin.taille = 152;
-        coincoin.clafoutis = 'cerise';
-        coincoin.choucroute = 'biere';
-        coincoin.objet = new Object();
-        coincoin.objet.diametre = 120;
+    class Voiture {
+        constructor(masse, vitesse, couleur, marque, modele) {
+            this.masse = masse;
+            this.vitesse = vitesse;
+            this.couleur = couleur;
+            this.marque = marque;
+            this.modele = modele;
 
 
-        alert(coincoin);
-    </script>
+        }
+
+        calculerEnergieCinetique() {
+        return 0.5* this.masse * Math.pow(this.vitesse,2);
+
+        }
+    }
 
 
+    let voiture1 = new Voiture(1000, 0, 'rouge', 'Simca', '1000');
+    let voiture2 = new Voiture(800, 0, 'noir', 'Renault', 'clio');
+
+    voiture1.vitesse = 50;
+    console.log(voiture1.calculerEnergieCinetique());
+
+
+</script>
 
 
 </body>
