@@ -12,27 +12,32 @@
 <script>
 
     class Voiture {
-        constructor(masse, vitesse, couleur, marque, modele) {
+        constructor(masse, vitesse, couleur, marque, modele,volumeReservoir) {
             this.masse = masse;
             this.vitesse = vitesse;
             this.couleur = couleur;
             this.marque = marque;
             this.modele = modele;
+            this.volumeReservoir = volumeReservoir;
 
 
         }
 
         calculerEnergieCinetique() {
         return 0.5* this.masse * Math.pow(this.vitesse,2);
-
+        }
+        calculerMasseConsommation(consommation){
+        this.masse = this.masse - 0.755 * consommation;
         }
     }
 
 
-    let voiture1 = new Voiture(1000, 0, 'rouge', 'Simca', '1000');
-    let voiture2 = new Voiture(800, 0, 'noir', 'Renault', 'clio');
+    let voiture1 = new Voiture(1000, 0, 'rouge', 'Simca', '1000', 45);
+    let voiture2 = new Voiture(800, 0, 'noir', 'Renault', 'clio', 30);
 
     voiture1.vitesse = 50;
+    console.log(voiture1.calculerEnergieCinetique());
+    voiture1.calculerMasseConsommation(15);
     console.log(voiture1.calculerEnergieCinetique());
 
 
